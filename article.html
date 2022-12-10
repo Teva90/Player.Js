@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player.js: Article Demo</title>
+    <meta name="description" content="A few tips and tricks to using Player.js within articles.">
+    <link href='http://fonts.googleapis.com/css?family=Cantarell|Fjalla+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/playerjs.css" />
+    <script src="scripts/libs/modernizr.js"></script>
+  </head>
+  <body class="article">
+
+  <div class="contain-to-grid sticky">
+    <nav class="top-bar" data-topbar data-options="sticky_on: large">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/">Player.js</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="https://github.com/embedly/player.js"><i class="fa fa-github"></i> Code</a></li>
+          <li class="has-dropdown">
+            <a href="#">Demos</a>
+            <ul class="dropdown">
+              <li><a href="/article.html">Article</a></li>
+              <li><a href="/progress.html">Progress</a></li>
+              <li><a href="/captions.html"> Captions</a></li>
+              <li><a href="/scroll.html">Scroll</a></li>
+              <li><a href="/resume.html">Resume</a></li>
+              <li><a href="/music.html">Music</a></li>
+              <li><a href="/soundboard.html">Soundboard</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <h3>Stats</h3>
+      <ul>
+        <li><b>Read Time:</b> <span id="read">0</span></li>
+        <li><b>Watch Time:</b> <span id="duration">0</span></li>
+        <li><b>Plays:</b> <span id="play">0</span></li>
+        <li><b>Pause:</b> <span id="pause">0</span></li>
+        <li><b>Finished:</b> <span id="finsh">0</span></li>
+      </ul>
+      <p>
+        <a class="button" target="_blank" href="https://github.com/embedly/player.js/blob/gh-pages/scripts/article.js">Code</a>
+        <a class="button" target="_blank" href="https://github.com/embedly/player.js/blob/gh-pages/article.html">HTML</a>
+      </p>
+    </div>
+    <div class="large-6 columns">
+      <h1>An Intro to Video</h1>
+      <p>
+        When we think articles we think reading, not watching. We do however see the rise of articles with multiple videos and some interesting places to implement Player.js.
+      </p>
+      <p>
+        This is an example article with 3 videos. You will notice a few things.
+      </p>
+      <ul>
+        <li>Reading time is being updated right now, when you start watching a video, watch time will start increasing.</li>
+        <li>We track the number of plays, pauses and finishes of a particular video.</li>
+        <li>When you click play, the title of the document changes to include a play icon.</li>
+        <li>If you play one video and then play the next, the first video will pause.</li>
+      </ul>
+      <p>
+
+      </p>
+    </div>
+    <div class="large-2 columns"></div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="flex-video widescreen vimeo">
+        <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F83513993&url=http%3A%2F%2Fvimeo.com%2F83513993&image=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F460%2F017%2F460017876_1280.jpg&key=internal&type=text%2Fhtml&schema=vimeo" width="500" height="281" scrolling="no" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-6 columns large-offset-2">
+      <p>
+        Nullam quis lacinia risus. Morbi quis enim fringilla, pulvinar dui tincidunt, fermentum neque. Cras sit amet odio et orci pellentesque luctus vel vitae eros. Morbi dignissim suscipit convallis. Nullam quis malesuada dolor. Suspendisse egestas consequat nulla eget blandit. Cras accumsan nunc rutrum purus eleifend imperdiet eu ac ligula. Maecenas ut nisi nulla. Nunc vel lacus velit. Integer dignissim tempus eros imperdiet gravida.
+      </p>
+      <p>
+        Etiam at eros sapien. Aenean ut metus in tellus tempor semper a blandit leo. Nunc eu sapien vitae lectus aliquet pellentesque. Praesent semper nisi eu rutrum tempus. Praesent in vehicula est. Cras in ullamcorper orci. Phasellus aliquam odio in pharetra euismod. Curabitur sit amet diam volutpat, convallis neque ut, consequat magna. Duis venenatis egestas tellus, sit amet posuere erat feugiat vitae. Nulla ut elit non eros pulvinar vestibulum. Donec pretium eget lacus ut volutpat. Etiam sed tristique diam. Suspendisse id blandit ipsum.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="flex-video widescreen vimeo">
+        <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F83907617&url=http%3A%2F%2Fvimeo.com%2F83907617&image=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F460%2F600%2F460600718_1280.jpg&key=internal&type=text%2Fhtml&schema=vimeo" width="500" height="250" scrolling="no" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="large-6 columns large-offset-4">
+      <p>
+        Phasellus et luctus metus, nec pharetra justo. Suspendisse laoreet quis nulla non eleifend. Nullam rutrum, augue et tincidunt dignissim, nulla diam scelerisque massa, vitae consequat erat risus vel nibh. Maecenas vel erat a ante mattis euismod. Proin vel adipiscing ligula. Aliquam erat volutpat. Vestibulum nec neque sollicitudin magna hendrerit sollicitudin eu eu mauris. Etiam non congue felis, quis elementum mauris. Ut mauris nulla, viverra non nulla id, scelerisque laoreet metus. Donec porttitor vehicula auctor. Phasellus vitae massa tempus, accumsan ligula at, pellentesque nunc. Maecenas rhoncus sollicitudin vestibulum. Vestibulum elementum quis nisl quis venenatis. Vivamus tempus nec justo tincidunt facilisis. Donec sit amet lacus eros.
+      </p>
+      <p>
+        Nulla bibendum vitae dolor at suscipit. Nam non tincidunt magna. Donec risus tellus, pulvinar sed lectus at, tincidunt gravida erat. Maecenas porta lorem in mattis varius. Vestibulum mattis nulla arcu. In lobortis mi id enim adipiscing malesuada. Morbi aliquam auctor nisl nec pretium. Nunc posuere mattis augue eget laoreet. Vivamus venenatis et urna nec luctus. Maecenas consectetur magna eu est ullamcorper accumsan. Phasellus sodales turpis vehicula, ornare turpis et, tristique diam.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="flex-video vimeo">
+        <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FVKHV0LLvhXM%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVKHV0LLvhXM&image=http%3A%2F%2Fi1.ytimg.com%2Fvi%2FVKHV0LLvhXM%2Fhqdefault.jpg&key=internal&type=text%2Fhtml&schema=youtube" width="500" height="281" scrolling="no" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="scripts/libs/jquery.js"></script>
+  <script src="scripts/libs/foundation.min.js"></script>
+  <script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"></script>
+  <script type="text/javascript" src="http://cdn.embed.ly/player-0.1.0.min.js"></script>
+  <script src="scripts/article.js"></script>
+  <script>
+    $.embedly.defaults.key = '3ee528c9eb4b4908b268ce1ace120c92';
+    $(document).foundation();
+  </script>
+  </body>
+</html>

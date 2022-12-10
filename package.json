@@ -1,0 +1,22 @@
+{
+  "title": "Player.js Pages",
+  "name": "playerjs-pages",
+  "version": "0.0.1",
+  "homepage": "http://github.com/embedly/player.js",
+  "author": {
+    "name": "Embedly"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/embedly/player.js/blob/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

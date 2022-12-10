@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player.js: Progress Demo</title>
+    <meta name="description" content="Give users a slight visual cue of how long they have been watching a video and how long they have to go.">
+    <link href='http://fonts.googleapis.com/css?family=Cantarell|Fjalla+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/playerjs.css" />
+    <script src="scripts/libs/modernizr.js"></script>
+  </head>
+  <body class="progresses">
+
+  <div class="contain-to-grid sticky">
+    <nav class="top-bar" data-topbar data-options="sticky_on: large">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/">Player.js</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li ><a href="https://github.com/embedly/player.js"><i class="fa fa-github"></i> Code</a></li>
+          <li class="has-dropdown">
+            <a href="#">Demos</a>
+            <ul class="dropdown">
+              <li><a href="/article.html">Article</a></li>
+              <li><a href="/progress.html">Progress</a></li>
+              <li><a href="/captions.html"> Captions</a></li>
+              <li><a href="/scroll.html">Scroll</a></li>
+              <li><a href="/resume.html">Resume</a></li>
+              <li><a href="/music.html">Music</a></li>
+              <li><a href="/soundboard.html">Soundboard</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+  <div class="progress">
+    <span class="meter">
+      <span class="current-time"></span>
+    </span>
+    <span class="duration"></span>
+  </div>
+
+  <div class="row content">
+    <div class="large-4 columns">
+      <h1>Progress</h1>
+      <p>
+        It's somewhat common to give users a slight visual cue of how long they have been watching a video and how long they have to go.
+      </p>
+      <p>
+        You'll notice above a progress bar moving to the right. If you hover over it, you will see time information.
+      </p>
+      <p>
+        <a class="button" target="_blank" href="https://github.com/embedly/player.js/blob/gh-pages/scripts/progress.js">Code</a>
+        <a class="button" target="_blank" href="https://github.com/embedly/player.js/blob/gh-pages/progress.html">HTML</a>
+      </p>
+    </div>
+    <div class="large-8 columns">
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="scripts/libs/jquery.js"></script>
+  <script src="scripts/libs/foundation.min.js"></script>
+  <script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"></script>
+  <script type="text/javascript" src="http://cdn.embed.ly/player-0.1.0.min.js"></script>
+  <script src="scripts/progress.js"></script>
+  <script>
+    $.embedly.defaults.key = '3ee528c9eb4b4908b268ce1ace120c92';
+    $(document).foundation();
+  </script>
+  </body>
+</html>
